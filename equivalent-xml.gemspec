@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = %q{equivalent-xml}
-  s.version = '1.0.0'
+  s.version = '1.0.1'
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael B. Klein"]
-  s.description = %q{Compares two XML Nodes (Documents, etc.) for certain semantic equivalencies. 
+  s.description = %q{Compares two XML Nodes (Documents, etc.) for certain semantic equivalencies.
     Currently written for Nokogiri and Oga, but with an eye toward adding more XML libraries}
   s.email = %q{mbklein@gmail.com}
   s.extra_rdoc_files = [
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     "spec/equivalent-xml_spec.rb"
   ]
 
-  s.add_development_dependency(%q<nokogiri>, [">= 1.4.3"])
+  s.add_development_dependency(%q<nokogiri>, [">= 1.8.3"])
   s.add_development_dependency(%q<oga>)
   s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
   s.add_development_dependency(%q<simplecov>)

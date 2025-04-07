@@ -13,6 +13,9 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
+require 'bundler/audit/task'
+Bundler::Audit::Task.new
+
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new
 task :default => :spec
